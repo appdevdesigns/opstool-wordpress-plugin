@@ -1,0 +1,34 @@
+{
+    "name": "opstool-wordpress-plugin",
+    "version": "0.0.0",
+    "description": "(plugin) Supporting files for embedding the OpsPortal into a Wordpress site.",
+    "main": "module.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "make test",
+        "postinstall": "node setup/setup.js",
+        "postupdate": "node setup/setup.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/appdevdesigns/opstool-wordpress-plugin.git"
+    },
+    "author": "Johnny Hausman",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/appdevdesigns/opstool-wordpress-plugin/issues"
+    },
+    "homepage": "https://github.com/appdevdesigns/opstool-wordpress-plugin#readme",
+    "dependencies": {
+        "ad-utils": "appdevdesigns/ad-utils"
+    },
+    "devDependencies": {
+        "barrels": "^1.6.4",
+        "chai": "^3.5.0",
+        "mocha": "^2.5.3",
+        "mocha-phantomjs": "^4.0.2",
+        "supertest": "^1.2.0"
+    }
+}
