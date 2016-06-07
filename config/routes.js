@@ -24,6 +24,7 @@ module.exports = {
 
   */
 
+  'get /opstool-wordpress-plugin/theme' : 'opstool-wordpress-plugin/ThemeController.theme',
 
 };
 
