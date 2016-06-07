@@ -18,13 +18,15 @@ module.exports = {
 		// 		"status":"success",
 		// 		"data":[
 		// 			{ 
-		// 				"path":"/styles/opsportal-theme-wp-1",
+		// 				"path":"styles/opsportal-theme-wp-1",
 		// 				"name":"opsportal-theme-wp-1"
 		// 			}
 		// 		]
 		// 	}
 
 		var themes = [];
+
+		// just report on any files that we include in our plugin:
 		fs.readdir(path.join(__dirname,'..', '..', 'assets', 'styles'), function(err, files){
 
 			if (err) {
