@@ -11,16 +11,13 @@
  * http://sailsjs.org/#documentation
  */
 
-// var serviceStack = ADCore.policy.serviceStack([ 'policy1', 'policy2']);
+var sessionStack = ADCore.policy.serviceStack();    
+var authKeyStack = ['authKey'].concat(sessionStack);
 
 module.exports = {
 
-//    'opstool-wordpress-plugin/YourController': {
-//        method: ['isAuthenticatedService'],
-//        auth: [],
-//        sync: serviceStack,
-//        logout:true
-//    }
-
+   'opstool-wordpress-plugin/ThemeController': {
+       theme: authKeyStack
+   }
 
 };
